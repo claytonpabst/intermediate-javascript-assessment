@@ -13,7 +13,14 @@
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-
+function callBinding(magicAnimals, updateAnimal, id) {
+    for(let i in magicAnimals) {
+        if(magicAnimals[i].id === id) {
+            let updated = updateAnimal.call(magicAnimals[i], 'Trogdor')
+            return updated
+        }
+    }
+}
 
 
 // *************
@@ -28,7 +35,14 @@
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-
+function applyBinding(magicAnimals, updateAnimal, id) {
+    for(let i in magicAnimals) {
+        if(magicAnimals[i].id === id) {
+            let updated = updateAnimal.apply(magicAnimals[i], ['being majestic', 'eating rainbows'])
+            return updated;
+        }
+    }
+}
 
 
 // *************
