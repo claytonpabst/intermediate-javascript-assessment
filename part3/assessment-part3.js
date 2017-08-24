@@ -62,6 +62,9 @@ function applyBinding(magicAnimals, updateAnimal, id) {
 var foo;
 
 // CODE HERE...
+function promiseMe(param) {
+    
+}
 
 
 
